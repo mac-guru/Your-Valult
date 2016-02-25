@@ -14,6 +14,8 @@
 		F0CDCBE51C7428BA00A1F776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CDCBE31C7428BA00A1F776 /* LaunchScreen.storyboard */; };
 		F0CDCBF01C7428BA00A1F776 /* Your_ValultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBEF1C7428BA00A1F776 /* Your_ValultTests.swift */; };
 		F0CDCBFB1C7428BA00A1F776 /* Your_ValultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBFA1C7428BA00A1F776 /* Your_ValultUITests.swift */; };
+		F0F48D871C7F3867002069A3 /* InternetAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */; };
+		F0F48D891C7F44B5002069A3 /* EntryInternetAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F0CDCBF61C7428BA00A1F776 /* Your ValultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Your ValultUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CDCBFA1C7428BA00A1F776 /* Your_ValultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Your_ValultUITests.swift; sourceTree = "<group>"; };
 		F0CDCBFC1C7428BA00A1F776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternetAccountVC.swift; path = ../InternetAccountVC.swift; sourceTree = "<group>"; };
+		F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryInternetAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		F0CDCBD91C7428BA00A1F776 /* Your Valult */ = {
 			isa = PBXGroup;
 			children = (
+				F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */,
+				F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */,
 				F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */,
 				F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */,
 				F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F48D891C7F44B5002069A3 /* EntryInternetAccountVC.swift in Sources */,
 				F0CDCBDD1C7428BA00A1F776 /* ViewController.swift in Sources */,
+				F0F48D871C7F3867002069A3 /* InternetAccountVC.swift in Sources */,
 				F0CDCBDB1C7428BA00A1F776 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +490,7 @@
 				F0CDCC011C7428BA00A1F776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0CDCC021C7428BA00A1F776 /* Build configuration list for PBXNativeTarget "Your ValultTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				F0CDCC041C7428BA00A1F776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0CDCC051C7428BA00A1F776 /* Build configuration list for PBXNativeTarget "Your ValultUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				F0CDCC071C7428BA00A1F776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
