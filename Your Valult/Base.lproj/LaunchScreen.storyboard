@@ -16,7 +16,31 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Vault" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAN-vq-iQj">
+                                <rect key="frame" x="238" y="283.5" width="124.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.041691236197948456" green="0.54472935199737549" blue="0.91013675928115845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer Amrit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aux-jU-kVY">
+                                <rect key="frame" x="231" y="559" width="138" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="PPs-Ym-wlf"/>
+                                    <constraint firstAttribute="width" constant="138" id="aCX-hA-3yQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.041691236197948456" green="0.54472935199737549" blue="0.91013675928115845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Aux-jU-kVY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="02l-R6-YXC"/>
+                            <constraint firstItem="BAN-vq-iQj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Tdc-Fn-h5n"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Aux-jU-kVY" secondAttribute="bottom" constant="15" id="cb5-oL-ZeW"/>
+                            <constraint firstItem="BAN-vq-iQj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mYF-m6-VLK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

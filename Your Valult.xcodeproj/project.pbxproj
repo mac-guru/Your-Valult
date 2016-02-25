@@ -16,6 +16,7 @@
 		F0CDCBFB1C7428BA00A1F776 /* Your_ValultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBFA1C7428BA00A1F776 /* Your_ValultUITests.swift */; };
 		F0F48D871C7F3867002069A3 /* InternetAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */; };
 		F0F48D891C7F44B5002069A3 /* EntryInternetAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */; };
+		F0F48D8B1C7F581D002069A3 /* InternetAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F0CDCBFC1C7428BA00A1F776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternetAccountVC.swift; path = ../InternetAccountVC.swift; sourceTree = "<group>"; };
 		F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryInternetAccountVC.swift; sourceTree = "<group>"; };
+		F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetAccountCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */,
 				F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */,
+				F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */,
 				F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */,
 				F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */,
 				F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */,
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					F0CDCBD61C7428BA00A1F776 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = PVQ3KQ4EA2;
 					};
 					F0CDCBEA1C7428BA00A1F776 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -263,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0F48D891C7F44B5002069A3 /* EntryInternetAccountVC.swift in Sources */,
+				F0F48D8B1C7F581D002069A3 /* InternetAccountCell.swift in Sources */,
 				F0CDCBDD1C7428BA00A1F776 /* ViewController.swift in Sources */,
 				F0F48D871C7F3867002069A3 /* InternetAccountVC.swift in Sources */,
 				F0CDCBDB1C7428BA00A1F776 /* AppDelegate.swift in Sources */,
@@ -405,10 +410,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Your Valult/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amrit.yourValult.Your-Valult";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -416,10 +425,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Your Valult/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amrit.yourValult.Your-Valult";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

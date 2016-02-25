@@ -9,9 +9,9 @@
 import UIKit
 import CoreData
 
-class InternetAccountVC: UIViewController, UITableViewDelegate {
+class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var InternetAc: Array <AnyObject> = []
+    var InternetAc = ["facebook", "twitter", "snapchat" , "Nabil Bank" , "Github" , "router password", "Disney Channel", "Netflix"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,19 @@ class InternetAccountVC: UIViewController, UITableViewDelegate {
         
     }
     
-    @IBAction func touchbtn(sender: AnyObject) {
-        print("a")
+    
+     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell:InternetAccountCell = tableView.dequeueReusableCellWithIdentifier("cell") as! InternetAccountCell
+        cell.lblInternetAccountName.text = InternetAc[indexPath.row]
+        return cell
+        
+        
+        
+        
+        
     }
+
+    
+  
     
 }
