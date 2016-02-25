@@ -16,6 +16,9 @@ class EntryInternetAccountVC: UIViewController {
     @IBAction func btnBack(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    @IBAction func btnCancel(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
 
