@@ -11,5 +11,6 @@ import UIKit
 class InternetAccountCell: UITableViewCell {
     
     @IBOutlet var lblInternetAccountName: UILabel!
+    @IBOutlet var lblInternetAccoutUserName: UILabel!
 
 }

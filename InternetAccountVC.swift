@@ -11,12 +11,31 @@ import CoreData
 
 class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var InternetAc = ["facebook", "twitter", "snapchat" , "Nabil Bank" , "Github" , "router password", "Disney Channel", "Netflix"]
+    @IBOutlet var tableView: UITableView!
+    
+    
+//    var ac = ["a", "b"]
+  
+     var IA: Array <AnyObject> = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+  override func viewDidAppear(animated: Bool) {
+    
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+        let Context: NSManagedObjectContext = AppDel.managedObjectContext
+        let request = NSFetchRequest(entityName: "InternetAccount")
+    
+        IA = try! Context.executeFetchRequest(request)
+        tableView.reloadData()
+    
+    }
+    
+    
 
      func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -25,14 +44,21 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return InternetAc.count
+        return IA.count
         
     }
     
     
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:InternetAccountCell = tableView.dequeueReusableCellWithIdentifier("cell") as! InternetAccountCell
-        cell.lblInternetAccountName.text = InternetAc[indexPath.row]
+        
+        let data: NSManagedObject = IA[indexPath.row] as! NSManagedObject
+        
+      
+        
+        cell.lblInternetAccountName?.text = data.valueForKey("internetAccount") as? String
+        cell.lblInternetAccoutUserName?.text = data.valueForKey("internetUserName") as? String
+        
         return cell
         
         
