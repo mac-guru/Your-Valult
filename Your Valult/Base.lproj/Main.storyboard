@@ -198,9 +198,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOq-cN-gv4">
-                                                    <rect key="frame" x="212.5" y="38" width="175" height="25"/>
+                                                    <rect key="frame" x="8" y="38" width="584" height="25"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="175" id="k6M-Qz-3Oh"/>
+                                                        <constraint firstAttribute="width" constant="584" id="k6M-Qz-3Oh"/>
                                                         <constraint firstAttribute="height" constant="25" id="mm8-Ba-PNv"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -228,7 +228,7 @@
                                         <connections>
                                             <outlet property="lblInternetAccountName" destination="Xwk-Ff-Xqk" id="g98-uM-yIO"/>
                                             <outlet property="lblInternetAccoutUserName" destination="sOq-cN-gv4" id="p6n-yZ-yqC"/>
-                                            <segue destination="ITA-rA-AxG" kind="show" id="X7W-R5-sQo"/>
+                                            <segue destination="ITA-rA-AxG" kind="show" identifier="goToUpdateVC" id="X7W-R5-sQo"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -503,7 +503,7 @@
                                     <constraint firstAttribute="height" constant="35" id="XOw-Yl-oJS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDl-CK-ODu">
                                 <rect key="frame" x="20" y="343" width="560" height="35"/>
@@ -516,6 +516,7 @@
                                 </state>
                                 <connections>
                                     <action selector="SaveInternetAccount:" destination="V93-Al-QKK" eventType="touchUpInside" id="YNN-qy-1ga"/>
+                                    <action selector="btnUpdate:" destination="ITA-rA-AxG" eventType="touchUpInside" id="NFj-by-bav"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IPL-82-uzK">
@@ -579,6 +580,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="pdL-RH-1HD"/>
+                    <connections>
+                        <outlet property="btnCancel" destination="8Jw-eZ-AMO" id="3sq-Vf-3rF"/>
+                        <outlet property="btnUpdate" destination="yDl-CK-ODu" id="hki-SP-cTg"/>
+                        <outlet property="txtAccountName" destination="IPL-82-uzK" id="vaa-y3-W7z"/>
+                        <outlet property="txtPassword" destination="VoP-BX-g0C" id="zbV-BU-Rcf"/>
+                        <outlet property="txtUserName" destination="wS1-yi-Gux" id="H3H-mZ-z2y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kT-as-G1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

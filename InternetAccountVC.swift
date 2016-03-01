@@ -93,12 +93,22 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
     
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
-        if segue.identifier == "updateSegue"{
-            let updateVC: EntryInternetAccountVC = segue.destinationViewController as! EntryInternetAccountVC
-                updateVC.lblTitle.text = "Update Entry"
-            
-            
-        }
+    if segue.identifier == "goToUpdateVC"{
+    
+    let selectedItem: NSManagedObject = IA[self.tableView.indexPathForSelectedRow!.row] as! NSManagedObject
+    
+    let updateVC : UpdateInternetAccountVC = segue.destinationViewController as! UpdateInternetAccountVC
+        
+        updateVC.accountName = selectedItem.valueForKey("internetAccount") as! String
+        updateVC.userName = selectedItem.valueForKey("internetUserName") as! String
+        updateVC.password = selectedItem.valueForKey("internetPassword") as! String
+        
+        updateVC.existingItem = selectedItem
+        
+    
+    }
+    
+    
     }
     
     
