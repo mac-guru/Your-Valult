@@ -91,6 +91,16 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+        if segue.identifier == "updateSegue"{
+            let updateVC: EntryInternetAccountVC = segue.destinationViewController as! EntryInternetAccountVC
+                updateVC.lblTitle.text = "Update Entry"
+            
+            
+        }
+    }
+    
     
   
     

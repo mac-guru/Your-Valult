@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 
 class EntryInternetAccountVC: UIViewController {
+    @IBOutlet var lblTitle: UILabel!
+    
     
     @IBOutlet var txtAccountName: UITextField!
     @IBOutlet var txtUserName: UITextField!
@@ -18,7 +20,7 @@ class EntryInternetAccountVC: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+               
     }
     @IBAction func btnBack(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
