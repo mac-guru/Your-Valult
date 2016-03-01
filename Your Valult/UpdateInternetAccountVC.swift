@@ -54,12 +54,22 @@ class UpdateInternetAccountVC: UIViewController {
     }
     
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        
+        
+        textField.resignFirstResponder()
+        
+        return false
+    }
+    
+    
     @IBAction func btnUpdate(sender: AnyObject) {
        
         
         let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let Context: NSManagedObjectContext = AppDel.managedObjectContext
-        let entity = NSEntityDescription.entityForName("InternetAccount", inManagedObjectContext: Context)
+       // let entity = NSEntityDescription.entityForName("InternetAccount", inManagedObjectContext: Context)
         
         if existingItem != nil {
             
@@ -74,17 +84,16 @@ class UpdateInternetAccountVC: UIViewController {
             
             try Context.save()
             print("Updated")
+            self.dismissViewControllerAnimated(true, completion: nil)
             
         }
         catch _ {
             
         }
         
+        
+        
     }
-    
-    
-    
-    
     
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

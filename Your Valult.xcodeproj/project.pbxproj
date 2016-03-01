@@ -115,12 +115,7 @@
 		F0CDCBD91C7428BA00A1F776 /* Your Valult */ = {
 			isa = PBXGroup;
 			children = (
-				F0A3A32E1C80AB42006E2AC9 /* InternetAccount+CoreDataProperties.swift */,
-				F0A3A32F1C80AB42006E2AC9 /* InternetAccount.swift */,
-				F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */,
-				F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */,
-				F05AC0681C85D08000BF17AD /* UpdateInternetAccountVC.swift */,
-				F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */,
+				F0F4664B1C85EF1900CE177D /* Internet Accounts */,
 				F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */,
 				F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */,
 				F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */,
@@ -148,6 +143,19 @@
 				F0CDCBFC1C7428BA00A1F776 /* Info.plist */,
 			);
 			path = "Your ValultUITests";
+			sourceTree = "<group>";
+		};
+		F0F4664B1C85EF1900CE177D /* Internet Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				F0A3A32E1C80AB42006E2AC9 /* InternetAccount+CoreDataProperties.swift */,
+				F0A3A32F1C80AB42006E2AC9 /* InternetAccount.swift */,
+				F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */,
+				F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */,
+				F05AC0681C85D08000BF17AD /* UpdateInternetAccountVC.swift */,
+				F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */,
+			);
+			name = "Internet Accounts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

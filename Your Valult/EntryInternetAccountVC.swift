@@ -20,6 +20,9 @@ class EntryInternetAccountVC: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+
                
     }
     @IBAction func btnBack(sender: AnyObject) {
@@ -28,6 +31,28 @@ class EntryInternetAccountVC: UIViewController {
     @IBAction func btnCancel(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        let nextTag: Int = textField.tag + 1
+        
+        let nextResponder: UIResponder? = textField.superview?.superview?.viewWithTag(nextTag)
+        
+        if let nextR = nextResponder
+        {
+            // Found next responder, so set it.
+            nextR.becomeFirstResponder()
+        }
+        else
+        {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+        }
+        
+        return false
+    }
+    
     
     
     @IBAction func SaveInternetAccount(sender: AnyObject) {
@@ -39,7 +64,6 @@ class EntryInternetAccountVC: UIViewController {
         let item = InternetAccount(entity: entity!, insertIntoManagedObjectContext: Context)
         
      
-        
         item.internetAccount = txtAccountName.text!
         item.internetUserName = txtUserName.text!
         item.internetPassword = txtPassword.text!
@@ -49,9 +73,12 @@ class EntryInternetAccountVC: UIViewController {
             
             try Context.save()
             print("Done")
+            self.dismissViewControllerAnimated(true, completion: nil
+            )
             
         }
         catch _ {
+            
             
         }
         
