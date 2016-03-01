@@ -40,7 +40,7 @@ class EntryInternetAccountVC: UIViewController {
         
         item.internetAccount = txtAccountName.text!
         item.internetUserName = txtUserName.text!
-        item.internetUserName = txtPassword.text!
+        item.internetPassword = txtPassword.text!
         
         
         do{

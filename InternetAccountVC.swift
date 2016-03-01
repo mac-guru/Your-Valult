@@ -76,7 +76,17 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
             Context.deleteObject(IA[indexPath.row] as! NSManagedObject )
             IA.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
-            print("Deleted Internet Accounts")
+                    }
+        
+        
+        do{
+            
+            try Context.save()
+            print("Deleted")
+            
+        }
+        catch _ {
+            
         }
         
         
