@@ -13,8 +13,7 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet var tableView: UITableView!
     
-    
-//    var ac = ["a", "b"]
+
   
      var IA: Array <AnyObject> = []
     
@@ -49,6 +48,7 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
+    
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:InternetAccountCell = tableView.dequeueReusableCellWithIdentifier("cell") as! InternetAccountCell
         
@@ -61,12 +61,28 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
         
         return cell
         
-        
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    //Delete IA
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let Context: NSManagedObjectContext = AppDel.managedObjectContext
+
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            Context.deleteObject(IA[indexPath.row] as! NSManagedObject )
+            IA.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+            print("Deleted Internet Accounts")
+        }
         
         
         
     }
-
+    
     
   
     
