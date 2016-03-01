@@ -13,8 +13,6 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet var tableView: UITableView!
     
-
-  
      var IA: Array <AnyObject> = []
     
     

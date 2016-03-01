@@ -46,15 +46,23 @@ class EntryInternetAccountVC: UIViewController {
         do{
             
             try Context.save()
-            print("DOne")
+            print("Done")
             
         }
         catch _ {
             
         }
+        
+        txtAccountName.resignFirstResponder()
+        txtUserName.resignFirstResponder()
+        txtPassword.resignFirstResponder()
 
         
         
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+         self.view.endEditing(true)
     }
 
         
