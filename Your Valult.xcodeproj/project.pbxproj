@@ -15,10 +15,10 @@
 		F0CDCBDB1C7428BA00A1F776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */; };
 		F0CDCBDD1C7428BA00A1F776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */; };
 		F0CDCBE01C7428BA00A1F776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */; };
-		F0CDCBE21C7428BA00A1F776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CDCBE11C7428BA00A1F776 /* Assets.xcassets */; };
 		F0CDCBE51C7428BA00A1F776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CDCBE31C7428BA00A1F776 /* LaunchScreen.storyboard */; };
 		F0CDCBF01C7428BA00A1F776 /* Your_ValultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBEF1C7428BA00A1F776 /* Your_ValultTests.swift */; };
 		F0CDCBFB1C7428BA00A1F776 /* Your_ValultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBFA1C7428BA00A1F776 /* Your_ValultUITests.swift */; };
+		F0E5DFBA1C870F8900AD5B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */; };
 		F0F48D871C7F3867002069A3 /* InternetAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */; };
 		F0F48D891C7F44B5002069A3 /* EntryInternetAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */; };
 		F0F48D8B1C7F581D002069A3 /* InternetAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */; };
@@ -51,7 +51,6 @@
 		F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0CDCBDF1C7428BA00A1F776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F0CDCBE11C7428BA00A1F776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0CDCBE41C7428BA00A1F776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0CDCBE61C7428BA00A1F776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0CDCBEB1C7428BA00A1F776 /* Your ValultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Your ValultTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +59,7 @@
 		F0CDCBF61C7428BA00A1F776 /* Your ValultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Your ValultUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CDCBFA1C7428BA00A1F776 /* Your_ValultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Your_ValultUITests.swift; sourceTree = "<group>"; };
 		F0CDCBFC1C7428BA00A1F776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternetAccountVC.swift; path = ../InternetAccountVC.swift; sourceTree = "<group>"; };
 		F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryInternetAccountVC.swift; sourceTree = "<group>"; };
 		F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetAccountCell.swift; sourceTree = "<group>"; };
@@ -119,7 +119,6 @@
 				F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */,
 				F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */,
 				F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */,
-				F0CDCBE11C7428BA00A1F776 /* Assets.xcassets */,
 				F0CDCBE31C7428BA00A1F776 /* LaunchScreen.storyboard */,
 				F0A3A3271C809C91006E2AC9 /* Model.xcdatamodeld */,
 				F0CDCBE61C7428BA00A1F776 /* Info.plist */,
@@ -153,6 +152,7 @@
 				F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */,
 				F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */,
 				F05AC0681C85D08000BF17AD /* UpdateInternetAccountVC.swift */,
+				F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */,
 				F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */,
 			);
 			name = "Internet Accounts";
@@ -264,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CDCBE51C7428BA00A1F776 /* LaunchScreen.storyboard in Resources */,
-				F0CDCBE21C7428BA00A1F776 /* Assets.xcassets in Resources */,
+				F0E5DFBA1C870F8900AD5B93 /* Assets.xcassets in Resources */,
 				F0CDCBE01C7428BA00A1F776 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

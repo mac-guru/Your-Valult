@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Notes-->
         <scene sceneID="B7h-dn-NTc">
             <objects>
                 <viewController id="a8p-mG-Tq4" sceneMemberID="viewController">
@@ -56,7 +56,9 @@
                             <constraint firstItem="etk-VB-Aoh" firstAttribute="top" secondItem="ZRV-Ru-rwD" secondAttribute="top" id="tXa-Dq-Mt9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="d9D-mF-osq"/>
+                    <tabBarItem key="tabBarItem" title="Notes" image="bar_notes" id="d9D-mF-osq">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="1" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6d-B3-0kz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +116,7 @@
                             <constraint firstItem="AgF-Su-i5Y" firstAttribute="top" secondItem="fsT-GW-g0a" secondAttribute="top" id="mFw-pA-ddw"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Ywz-Ke-awo"/>
+                    <tabBarItem key="tabBarItem" title="Photos" image="bar_photo" id="Ywz-Ke-awo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GiH-gI-BTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,9 +139,9 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbt-Kl-fG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-720" y="-99"/>
+            <point key="canvasLocation" x="-621" y="-303"/>
         </scene>
-        <!--Item-->
+        <!--Internet Accounts-->
         <scene sceneID="oJ0-M4-waY">
             <objects>
                 <viewController id="da1-wm-XRH" customClass="InternetAccountVC" customModule="Your_Valult" customModuleProvider="target" sceneMemberID="viewController">
@@ -249,14 +251,14 @@
                             <constraint firstItem="Khj-cT-wa0" firstAttribute="top" secondItem="fmJ-xS-uSi" secondAttribute="bottom" id="lu0-md-9bW"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="FeV-D8-9Kd"/>
+                    <tabBarItem key="tabBarItem" title="Internet Accounts" image="bar_IA" id="FeV-D8-9Kd"/>
                     <connections>
                         <outlet property="tableView" destination="fmJ-xS-uSi" id="Zi0-a7-iFI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHk-H9-LYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-967" y="999"/>
+            <point key="canvasLocation" x="-1181" y="667"/>
         </scene>
         <!--Entry Internet AccountVC-->
         <scene sceneID="WE3-WN-Ili">
@@ -611,4 +613,9 @@
             <point key="canvasLocation" x="-1258" y="1717"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bar_IA" width="29" height="29"/>
+        <image name="bar_notes" width="29" height="29"/>
+        <image name="bar_photo" width="29" height="29"/>
+    </resources>
 </document>
