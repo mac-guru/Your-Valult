@@ -18,9 +18,13 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
     
   override func viewDidAppear(animated: Bool) {
+    
+    
     
         let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
@@ -48,6 +52,10 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
     
     
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+      
+        
+        
         let cell:InternetAccountCell = tableView.dequeueReusableCellWithIdentifier("cell") as! InternetAccountCell
         
         let data: NSManagedObject = IA[indexPath.row] as! NSManagedObject
@@ -56,6 +64,15 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
         
         cell.lblInternetAccountName?.text = data.valueForKey("internetAccount") as? String
         cell.lblInternetAccoutUserName?.text = data.valueForKey("internetUserName") as? String
+        
+        
+        if(indexPath.row % 2 == 0){
+          //  cell.backgroundColor = UIColor(hexString: "#ffe730ff")
+        } else{
+           // cell.backgroundColor = UIColor(hexString: "#ffe700ff")
+
+        }
+        
         
         return cell
         
@@ -108,10 +125,44 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
     
     }
     
+
     
     }
     
     
+    
+    
   
     
+}
+
+
+// This code is to use hexadecimal color in swift -- Copied from Internet
+
+extension UIColor {
+    public convenience init?(hexString: String) {
+        let r, g, b, a: CGFloat
+        
+        if hexString.hasPrefix("#") {
+            let start = hexString.startIndex.advancedBy(1)
+            let hexColor = hexString.substringFromIndex(start)
+            
+            if hexColor.characters.count == 8 {
+                let scanner = NSScanner(string: hexColor)
+                var hexNumber: UInt64 = 0
+                
+                if scanner.scanHexLongLong(&hexNumber) {
+                    r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
+                    g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
+                    b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
+                    a = CGFloat(hexNumber & 0x000000ff) / 255
+                    
+                    self.init(red: r, green: g, blue: b, alpha: a)
+                    return
+                }
+            }
+        }
+        
+        return nil
+    }
 }

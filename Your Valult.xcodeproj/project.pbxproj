@@ -19,6 +19,9 @@
 		F0CDCBF01C7428BA00A1F776 /* Your_ValultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBEF1C7428BA00A1F776 /* Your_ValultTests.swift */; };
 		F0CDCBFB1C7428BA00A1F776 /* Your_ValultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBFA1C7428BA00A1F776 /* Your_ValultUITests.swift */; };
 		F0E5DFBA1C870F8900AD5B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */; };
+		F0E5DFBC1C87121A00AD5B93 /* NewNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5DFBB1C87121A00AD5B93 /* NewNotesVC.swift */; };
+		F0E5DFBE1C87225600AD5B93 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5DFBD1C87225600AD5B93 /* NotesVC.swift */; };
+		F0E5DFC01C8722FF00AD5B93 /* NotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5DFBF1C8722FF00AD5B93 /* NotesCell.swift */; };
 		F0F48D871C7F3867002069A3 /* InternetAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */; };
 		F0F48D891C7F44B5002069A3 /* EntryInternetAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */; };
 		F0F48D8B1C7F581D002069A3 /* InternetAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */; };
@@ -60,6 +63,9 @@
 		F0CDCBFA1C7428BA00A1F776 /* Your_ValultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Your_ValultUITests.swift; sourceTree = "<group>"; };
 		F0CDCBFC1C7428BA00A1F776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0E5DFBB1C87121A00AD5B93 /* NewNotesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNotesVC.swift; sourceTree = "<group>"; };
+		F0E5DFBD1C87225600AD5B93 /* NotesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
+		F0E5DFBF1C8722FF00AD5B93 /* NotesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCell.swift; sourceTree = "<group>"; };
 		F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternetAccountVC.swift; path = ../InternetAccountVC.swift; sourceTree = "<group>"; };
 		F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryInternetAccountVC.swift; sourceTree = "<group>"; };
 		F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetAccountCell.swift; sourceTree = "<group>"; };
@@ -119,6 +125,10 @@
 				F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */,
 				F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */,
 				F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */,
+				F0E5DFBF1C8722FF00AD5B93 /* NotesCell.swift */,
+				F0E5DFBD1C87225600AD5B93 /* NotesVC.swift */,
+				F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */,
+				F0E5DFBB1C87121A00AD5B93 /* NewNotesVC.swift */,
 				F0CDCBE31C7428BA00A1F776 /* LaunchScreen.storyboard */,
 				F0A3A3271C809C91006E2AC9 /* Model.xcdatamodeld */,
 				F0CDCBE61C7428BA00A1F776 /* Info.plist */,
@@ -152,7 +162,6 @@
 				F0F48D861C7F3867002069A3 /* InternetAccountVC.swift */,
 				F0F48D881C7F44B5002069A3 /* EntryInternetAccountVC.swift */,
 				F05AC0681C85D08000BF17AD /* UpdateInternetAccountVC.swift */,
-				F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */,
 				F0F48D8A1C7F581D002069A3 /* InternetAccountCell.swift */,
 			);
 			name = "Internet Accounts";
@@ -291,14 +300,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0A3A3301C80AB42006E2AC9 /* InternetAccount+CoreDataProperties.swift in Sources */,
+				F0E5DFBE1C87225600AD5B93 /* NotesVC.swift in Sources */,
 				F0F48D891C7F44B5002069A3 /* EntryInternetAccountVC.swift in Sources */,
 				F0F48D8B1C7F581D002069A3 /* InternetAccountCell.swift in Sources */,
 				F0CDCBDD1C7428BA00A1F776 /* ViewController.swift in Sources */,
 				F0F48D871C7F3867002069A3 /* InternetAccountVC.swift in Sources */,
+				F0E5DFBC1C87121A00AD5B93 /* NewNotesVC.swift in Sources */,
 				F0CDCBDB1C7428BA00A1F776 /* AppDelegate.swift in Sources */,
 				F0A3A3311C80AB42006E2AC9 /* InternetAccount.swift in Sources */,
 				F0A3A3291C809C91006E2AC9 /* Model.xcdatamodeld in Sources */,
 				F05AC0691C85D08000BF17AD /* UpdateInternetAccountVC.swift in Sources */,
+				F0E5DFC01C8722FF00AD5B93 /* NotesCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
