@@ -14,6 +14,7 @@
 		F0A3A3311C80AB42006E2AC9 /* InternetAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3A32F1C80AB42006E2AC9 /* InternetAccount.swift */; };
 		F0C5F08A1C89D80A00A62F00 /* Notes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C5F0881C89D80A00A62F00 /* Notes+CoreDataProperties.swift */; };
 		F0C5F08B1C89D80A00A62F00 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C5F0891C89D80A00A62F00 /* Notes.swift */; };
+		F0C5F08D1C89DE6800A62F00 /* updateNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C5F08C1C89DE6800A62F00 /* updateNotesVC.swift */; };
 		F0CDCBDB1C7428BA00A1F776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */; };
 		F0CDCBDD1C7428BA00A1F776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */; };
 		F0CDCBE01C7428BA00A1F776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		F0A3A32F1C80AB42006E2AC9 /* InternetAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternetAccount.swift; path = ../InternetAccount.swift; sourceTree = "<group>"; };
 		F0C5F0881C89D80A00A62F00 /* Notes+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notes+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F0C5F0891C89D80A00A62F00 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		F0C5F08C1C89DE6800A62F00 /* updateNotesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = updateNotesVC.swift; sourceTree = "<group>"; };
 		F0CDCBD71C7428BA00A1F776 /* Your Valult.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Your Valult.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */,
 				F0E5DFBD1C87225600AD5B93 /* NotesVC.swift */,
 				F0E5DFBB1C87121A00AD5B93 /* NewNotesVC.swift */,
+				F0C5F08C1C89DE6800A62F00 /* updateNotesVC.swift */,
 				F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */,
 				F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */,
 				F0E5DFBF1C8722FF00AD5B93 /* NotesCell.swift */,
@@ -310,6 +313,7 @@
 				F0E5DFBE1C87225600AD5B93 /* NotesVC.swift in Sources */,
 				F0F48D891C7F44B5002069A3 /* EntryInternetAccountVC.swift in Sources */,
 				F0F48D8B1C7F581D002069A3 /* InternetAccountCell.swift in Sources */,
+				F0C5F08D1C89DE6800A62F00 /* updateNotesVC.swift in Sources */,
 				F0CDCBDD1C7428BA00A1F776 /* ViewController.swift in Sources */,
 				F0F48D871C7F3867002069A3 /* InternetAccountVC.swift in Sources */,
 				F0E5DFBC1C87121A00AD5B93 /* NewNotesVC.swift in Sources */,

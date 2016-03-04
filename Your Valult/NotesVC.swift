@@ -7,18 +7,33 @@
 //
 
 import UIKit
+import CoreData
 
 class NotesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var notesTableView: UITableView!
     
-     var Notes = ["Hi Everyone", "Nepal", "Aout Sofwarica College", "Decent Nepali" , "Nepali Movies in rock", "Get rock in the city", "University in Nepal", "It Scopes"]
+      var Notes: Array <AnyObject> = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+      
         // Do any additional setup after loading the view.
+    }
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let Context: NSManagedObjectContext = AppDel.managedObjectContext
+        let request = NSFetchRequest(entityName: "Notes")
+        
+        Notes = try! Context.executeFetchRequest(request)
+        notesTableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,13 +59,68 @@ class NotesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
         let cell:NotesCell = tableView.dequeueReusableCellWithIdentifier("NotesCell") as! NotesCell
-            cell.lblNotesTitle.text = Notes[indexPath.row]
         
+     
+        let data: NSManagedObject = Notes[indexPath.row] as! NSManagedObject
+        
+
+        cell.lblNotesTitle?.text = data.valueForKey("bodyText") as? String
         
         
         return cell
         
     }
+    
+
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let Context: NSManagedObjectContext = AppDel.managedObjectContext
+        
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            Context.deleteObject(Notes[indexPath.row] as! NSManagedObject )
+            Notes.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+        
+        
+        do{
+            
+            try Context.save()
+            print("Deleted")
+            
+        }
+        catch _ {
+            
+        }
+        
+        
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "updateNotes"{
+          
+            
+            let selectedNotes: NSManagedObject = Notes[self.notesTableView.indexPathForSelectedRow!.row] as! NSManagedObject
+            
+          
+            
+            let updateVC: updateNotesVC = segue.destinationViewController as! updateNotesVC
+            
+            updateVC.NotesBody = selectedNotes.valueForKey("bodyText") as! String
+            updateVC.existingNotes = selectedNotes
+            
+            
+            
+        }
+        
+        
+        
+    }
+    
+    
+
     
   
     
