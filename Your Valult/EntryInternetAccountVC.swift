@@ -22,8 +22,6 @@ class EntryInternetAccountVC: UIViewController {
         super.viewDidLoad()
 
         
-
-               
     }
     @IBAction func btnBack(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -52,8 +50,6 @@ class EntryInternetAccountVC: UIViewController {
         
         return false
     }
-    
-    
     
     @IBAction func SaveInternetAccount(sender: AnyObject) {
         
@@ -94,9 +90,9 @@ class EntryInternetAccountVC: UIViewController {
          self.view.endEditing(true)
     }
 
-        
-        
-    }
+   
+
+}
     
    
 

@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class NewNotesVC: UIViewController {
+    
+    @IBOutlet var btnSave: UIButton!
+    @IBOutlet var txtbody: UITextView!
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +31,32 @@ class NewNotesVC: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
-   
+    @IBAction func btnSave(sender: AnyObject) {
+        
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let Context: NSManagedObjectContext = AppDel.managedObjectContext
+        let entity = NSEntityDescription.entityForName("Notes", inManagedObjectContext: Context)
+        
+        let NewNotes = Notes(entity: entity!, insertIntoManagedObjectContext: Context)
+        
+
+
+        NewNotes.bodyText = txtbody.text!
+        
+        do{
+            
+            try Context.save()
+            print("Done")
+            self.dismissViewControllerAnimated(true, completion: nil
+            )
+            
+        }
+        catch _ {
+            
+            
+        }
+        
+    }
     
 
 }
