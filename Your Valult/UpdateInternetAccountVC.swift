@@ -63,6 +63,17 @@ class UpdateInternetAccountVC: UIViewController {
         return false
     }
     
+   
+    @IBAction func copyPassword(sender: AnyObject) {
+        let pb: UIPasteboard = UIPasteboard.generalPasteboard();
+        pb.string = txtPassword.text
+        
+    }
+        
+    @IBAction func revelPassword(sender: AnyObject) {
+        txtPassword.secureTextEntry = false
+    }
+    
     
     @IBAction func btnUpdate(sender: AnyObject) {
        

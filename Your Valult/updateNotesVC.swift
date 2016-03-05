@@ -69,13 +69,15 @@ class updateNotesVC: UIViewController {
         
 
     }
+    
    
     
     @IBAction func share(sender: AnyObject) {
        
         let vc = UIActivityViewController(activityItems: [txtBody.text!], applicationActivities: nil)
-        self.presentViewController(vc, animated: true, completion: nil)
+        vc.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList, UIActivityTypeCopyToPasteboard,UIActivityTypeOpenInIBooks,UIActivityTypePostToFlickr, UIActivityTypeSaveToCameraRoll,UIActivityTypePrint]
         
+        self.presentViewController(vc, animated: true, completion: nil)
         
         
     }
