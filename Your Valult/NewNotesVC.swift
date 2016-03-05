@@ -51,6 +51,7 @@ class NewNotesVC: UIViewController {
         
         
         NewNotes.bodyText = txtbody.text!
+        NewNotes.createdDate = NSDate()
         
         do{
             

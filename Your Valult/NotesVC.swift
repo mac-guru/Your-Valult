@@ -65,7 +65,15 @@ class NotesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
 
         cell.lblNotesTitle?.text = data.valueForKey("bodyText") as? String
+       
+        //cell.lblNotesDate?.text = data.valueForKey("createdDate") as? NSDate
         
+        let entryDate = data.valueForKey("createdDate") as? NSDate
+        
+       cell.lblNotesDate.text = dateTimeFormattedAsTimeAgo(entryDate!)
+            
+            
+       print(entryDate)
         
         return cell
         
