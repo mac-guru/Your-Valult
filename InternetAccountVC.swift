@@ -66,6 +66,18 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
         cell.lblInternetAccoutUserName?.text = data.valueForKey("internetUserName") as? String
         
         
+        
+        //cell.lblNotesDate?.text = data.valueForKey("createdDate") as? NSDate
+        
+        let updatedDate = data.valueForKey("pwdUpdatedDate") as? NSDate
+        
+        cell.updatedDate?.text = dateTimeFormattedAsTimeAgo(updatedDate!)
+        
+
+        
+        
+        
+        
         if(indexPath.row % 2 == 0){
           //  cell.backgroundColor = UIColor(hexString: "#ffe730ff")
         } else{

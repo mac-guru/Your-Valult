@@ -12,5 +12,7 @@ class InternetAccountCell: UITableViewCell {
     
     @IBOutlet var lblInternetAccountName: UILabel!
     @IBOutlet var lblInternetAccoutUserName: UILabel!
+    
+    @IBOutlet var updatedDate: UILabel!
 
 }

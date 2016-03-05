@@ -29,12 +29,17 @@ class NewNotesVC: UIViewController {
     
     @IBAction func btnBack(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
-        saveNotes()
+        
+        if txtbody.text != ""
+                {
+                    saveNotes()
+        }
+        
     }
 
     @IBAction func btnSave(sender: AnyObject) {
         saveNotes()
-        
+                
         
     }
     
@@ -66,6 +71,8 @@ class NewNotesVC: UIViewController {
             
         }
     }
+    
+    
     
 
 }

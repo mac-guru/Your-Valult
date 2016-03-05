@@ -4,13 +4,14 @@
         <attribute name="internetAccount" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="internetPassword" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="internetUserName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pwdUpdatedDate" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
     <entity name="Notes" representedClassName=".Notes" syncable="YES">
         <attribute name="bodyText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="createdDate" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
     <elements>
-        <element name="InternetAccount" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="InternetAccount" positionX="-63" positionY="-18" width="128" height="105"/>
         <element name="Notes" positionX="-63" positionY="9" width="128" height="75"/>
     </elements>
 </model>

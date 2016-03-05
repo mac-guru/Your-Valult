@@ -61,19 +61,32 @@ class NotesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let cell:NotesCell = tableView.dequeueReusableCellWithIdentifier("NotesCell") as! NotesCell
         
      
+        
+        
+
         let data: NSManagedObject = Notes[indexPath.row] as! NSManagedObject
         
 
         cell.lblNotesTitle?.text = data.valueForKey("bodyText") as? String
        
-        //cell.lblNotesDate?.text = data.valueForKey("createdDate") as? NSDate
         
-        let entryDate = data.valueForKey("createdDate") as? NSDate
         
-       cell.lblNotesDate.text = dateTimeFormattedAsTimeAgo(entryDate!)
-            
-            
-       print(entryDate)
+     
+        
+        
+                    var dateFormatter = NSDateFormatter()
+                    dateFormatter.dateFormat = "yyyy-MM-dd"
+                    let d = data.valueForKey("createdDate") as? NSDate
+                    let s = dateFormatter.stringFromDate(d!)
+                    print(s)
+        
+                    cell.lblNotesDate.text = s
+
+        
+          ////////
+        
+        
+ 
         
         return cell
         
@@ -129,7 +142,16 @@ class NotesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
 
+    func formatADate() {
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let d = NSDate()
+        let s = dateFormatter.stringFromDate(d)
+        print(s)
+        
+    }
     
+
   
     
 

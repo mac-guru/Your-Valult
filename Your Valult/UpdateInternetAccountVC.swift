@@ -76,6 +76,8 @@ class UpdateInternetAccountVC: UIViewController {
             existingItem.setValue(txtAccountName.text as String?, forKey:"internetAccount" )
             existingItem.setValue(txtUserName.text as String?, forKey:"internetUserName" )
             existingItem.setValue(txtPassword.text as String?, forKey: "internetPassword")
+            existingItem.setValue(NSDate(), forKey: "pwdUpdatedDate")
+            
             }
         
         

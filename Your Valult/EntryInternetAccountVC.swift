@@ -63,6 +63,8 @@ class EntryInternetAccountVC: UIViewController {
         item.internetAccount = txtAccountName.text!
         item.internetUserName = txtUserName.text!
         item.internetPassword = txtPassword.text!
+        item.pwdUpdatedDate = NSDate()
+        
         
         
         do{
