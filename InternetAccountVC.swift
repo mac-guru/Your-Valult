@@ -15,12 +15,20 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
     
      var IA: Array <AnyObject> = []
     
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
     }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+
     
   override func viewDidAppear(animated: Bool) {
     
@@ -149,6 +157,9 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
 }
 
 
+
+
+
 // This code is to use hexadecimal color in swift -- Copied from Internet
 
 extension UIColor {
@@ -178,3 +189,5 @@ extension UIColor {
         return nil
     }
 }
+
+

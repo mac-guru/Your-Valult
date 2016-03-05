@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Social
 
 class updateNotesVC: UIViewController {
     
@@ -67,8 +68,18 @@ class updateNotesVC: UIViewController {
         }
         
 
+    }
+   
+    
+    @IBAction func share(sender: AnyObject) {
+       
+        let vc = UIActivityViewController(activityItems: [txtBody.text!], applicationActivities: nil)
+        self.presentViewController(vc, animated: true, completion: nil)
+        
+        
         
     }
+    
     
 
 }

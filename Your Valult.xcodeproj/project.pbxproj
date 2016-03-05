@@ -10,6 +10,7 @@
 		F0228BE41C8AD279002F156F /* InternetAccount+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0228BE21C8AD279002F156F /* InternetAccount+CoreDataProperties.swift */; };
 		F0228BE51C8AD279002F156F /* InternetAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0228BE31C8AD279002F156F /* InternetAccount.swift */; };
 		F05AC0691C85D08000BF17AD /* UpdateInternetAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05AC0681C85D08000BF17AD /* UpdateInternetAccountVC.swift */; };
+		F05DDFAB1C8B163000A5646A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05DDFAA1C8B163000A5646A /* Social.framework */; };
 		F0860FDF1C8AA72600B358A2 /* DateTimeFormattedAsTimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0860FDE1C8AA72600B358A2 /* DateTimeFormattedAsTimeAgo.swift */; };
 		F0A3A3231C808ACC006E2AC9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A3A3221C808ACC006E2AC9 /* CoreData.framework */; };
 		F0A3A3291C809C91006E2AC9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0A3A3271C809C91006E2AC9 /* Model.xcdatamodeld */; };
@@ -52,6 +53,7 @@
 		F0228BE21C8AD279002F156F /* InternetAccount+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "InternetAccount+CoreDataProperties.swift"; path = "../InternetAccount+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F0228BE31C8AD279002F156F /* InternetAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternetAccount.swift; path = ../InternetAccount.swift; sourceTree = "<group>"; };
 		F05AC0681C85D08000BF17AD /* UpdateInternetAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateInternetAccountVC.swift; sourceTree = "<group>"; };
+		F05DDFAA1C8B163000A5646A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F0860FDE1C8AA72600B358A2 /* DateTimeFormattedAsTimeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeFormattedAsTimeAgo.swift; sourceTree = "<group>"; };
 		F0A3A3221C808ACC006E2AC9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F0A3A3281C809C91006E2AC9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05DDFAB1C8B163000A5646A /* Social.framework in Frameworks */,
 				F0A3A3231C808ACC006E2AC9 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +111,7 @@
 		F0CDCBCE1C7428BA00A1F776 = {
 			isa = PBXGroup;
 			children = (
+				F05DDFAA1C8B163000A5646A /* Social.framework */,
 				F0A3A3221C808ACC006E2AC9 /* CoreData.framework */,
 				F0CDCBD91C7428BA00A1F776 /* Your Valult */,
 				F0CDCBEE1C7428BA00A1F776 /* Your ValultTests */,
@@ -133,6 +137,7 @@
 				F0E5073A1C8AA93400864C7B /* Notes */,
 				F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */,
 				F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */,
+				F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */,
 				F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */,
 				F0CDCBE31C7428BA00A1F776 /* LaunchScreen.storyboard */,
 				F0A3A3271C809C91006E2AC9 /* Model.xcdatamodeld */,
@@ -171,7 +176,6 @@
 		F0E5073A1C8AA93400864C7B /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */,
 				F0C5F0881C89D80A00A62F00 /* Notes+CoreDataProperties.swift */,
 				F0C5F0891C89D80A00A62F00 /* Notes.swift */,
 				F0E5DFBD1C87225600AD5B93 /* NotesVC.swift */,

@@ -69,7 +69,7 @@ class UpdateInternetAccountVC: UIViewController {
         
         let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let Context: NSManagedObjectContext = AppDel.managedObjectContext
-       // let entity = NSEntityDescription.entityForName("InternetAccount", inManagedObjectContext: Context)
+        
         
         if existingItem != nil {
             
@@ -78,7 +78,7 @@ class UpdateInternetAccountVC: UIViewController {
             existingItem.setValue(txtPassword.text as String?, forKey: "internetPassword")
             existingItem.setValue(NSDate(), forKey: "pwdUpdatedDate")
             
-            }
+        }
         
         
         
