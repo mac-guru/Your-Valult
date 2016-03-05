@@ -49,6 +49,8 @@ class updateNotesVC: UIViewController {
         if existingNotes != nil {
             
             existingNotes.setValue(txtBody.text as String?, forKey: "bodyText")
+            existingNotes.setValue(NSDate(), forKey: "createdDate")
+            
         }
         
         

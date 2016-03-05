@@ -127,7 +127,6 @@
         <!--New NotesVC-->
         <scene sceneID="Sod-fr-SQA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="USS-KK-48e" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="RSb-Th-FQ0" customClass="NewNotesVC" customModule="Your_Valult" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KzO-a1-q6x"/>
@@ -207,6 +206,7 @@
                         <outlet property="txtbody" destination="IQF-Gf-Dna" id="T2l-Jv-liL"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USS-KK-48e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="346" y="571"/>
         </scene>
@@ -831,7 +831,6 @@
         <!--Update NotesVC-->
         <scene sceneID="8ah-8z-T6L">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1tg-cK-G3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="PGZ-8M-Bbd" customClass="updateNotesVC" customModule="Your_Valult" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Khk-Es-cmj"/>
@@ -888,7 +887,7 @@
                                     <constraint firstAttribute="bottom" secondItem="aNe-68-jQE" secondAttribute="bottom" constant="8" id="rrR-2c-uWL"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Body" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rsD-af-RwM">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Body" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rsD-af-RwM">
                                 <rect key="frame" x="6" y="68" width="588" height="383"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -910,6 +909,7 @@
                         <outlet property="txtBody" destination="rsD-af-RwM" id="lW5-4s-vPp"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tg-cK-G3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-406" y="1332"/>
         </scene>
