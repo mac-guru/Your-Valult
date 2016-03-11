@@ -70,11 +70,7 @@ class NotesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.lblNotesTitle?.text = data.valueForKey("bodyText") as? String
        
         
-        
-     
-        
-        
-                    var dateFormatter = NSDateFormatter()
+                    let dateFormatter = NSDateFormatter()
                     dateFormatter.dateFormat = "yyyy-MM-dd"
                     let d = data.valueForKey("createdDate") as? NSDate
                     let s = dateFormatter.stringFromDate(d!)
@@ -82,9 +78,7 @@ class NotesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
                     cell.lblNotesDate.text = s
 
-        
-          ////////
-        
+
         
  
         
@@ -110,6 +104,7 @@ class NotesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             print("Deleted")
             
         }
+            
         catch _ {
             
         }
@@ -142,15 +137,6 @@ class NotesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
 
-    func formatADate() {
-        var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let d = NSDate()
-        let s = dateFormatter.stringFromDate(d)
-        print(s)
-        
-    }
-    
 
   
     

@@ -23,6 +23,9 @@
 		F0CDCBE51C7428BA00A1F776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CDCBE31C7428BA00A1F776 /* LaunchScreen.storyboard */; };
 		F0CDCBF01C7428BA00A1F776 /* Your_ValultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBEF1C7428BA00A1F776 /* Your_ValultTests.swift */; };
 		F0CDCBFB1C7428BA00A1F776 /* Your_ValultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDCBFA1C7428BA00A1F776 /* Your_ValultUITests.swift */; };
+		F0E4FFA71C92E185000DB685 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4FFA61C92E185000DB685 /* PhotosVC.swift */; };
+		F0E4FFA91C92E3CC000DB685 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4FFA81C92E3CC000DB685 /* PhotosCell.swift */; };
+		F0E4FFAB1C92ECD3000DB685 /* AddPhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4FFAA1C92ECD3000DB685 /* AddPhotosVC.swift */; };
 		F0E5DFBA1C870F8900AD5B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */; };
 		F0E5DFBC1C87121A00AD5B93 /* NewNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5DFBB1C87121A00AD5B93 /* NewNotesVC.swift */; };
 		F0E5DFBE1C87225600AD5B93 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5DFBD1C87225600AD5B93 /* NotesVC.swift */; };
@@ -72,6 +75,9 @@
 		F0CDCBF61C7428BA00A1F776 /* Your ValultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Your ValultUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CDCBFA1C7428BA00A1F776 /* Your_ValultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Your_ValultUITests.swift; sourceTree = "<group>"; };
 		F0CDCBFC1C7428BA00A1F776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E4FFA61C92E185000DB685 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
+		F0E4FFA81C92E3CC000DB685 /* PhotosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
+		F0E4FFAA1C92ECD3000DB685 /* AddPhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotosVC.swift; sourceTree = "<group>"; };
 		F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0E5DFBB1C87121A00AD5B93 /* NewNotesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNotesVC.swift; sourceTree = "<group>"; };
 		F0E5DFBD1C87225600AD5B93 /* NotesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
@@ -137,6 +143,9 @@
 				F0E5073A1C8AA93400864C7B /* Notes */,
 				F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */,
 				F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */,
+				F0E4FFAA1C92ECD3000DB685 /* AddPhotosVC.swift */,
+				F0E4FFA61C92E185000DB685 /* PhotosVC.swift */,
+				F0E4FFA81C92E3CC000DB685 /* PhotosCell.swift */,
 				F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */,
 				F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */,
 				F0CDCBE31C7428BA00A1F776 /* LaunchScreen.storyboard */,
@@ -338,11 +347,14 @@
 				F0F48D8B1C7F581D002069A3 /* InternetAccountCell.swift in Sources */,
 				F0C5F08D1C89DE6800A62F00 /* updateNotesVC.swift in Sources */,
 				F0228BE51C8AD279002F156F /* InternetAccount.swift in Sources */,
+				F0E4FFA91C92E3CC000DB685 /* PhotosCell.swift in Sources */,
 				F0228BE41C8AD279002F156F /* InternetAccount+CoreDataProperties.swift in Sources */,
 				F0CDCBDD1C7428BA00A1F776 /* ViewController.swift in Sources */,
 				F0F48D871C7F3867002069A3 /* InternetAccountVC.swift in Sources */,
+				F0E4FFAB1C92ECD3000DB685 /* AddPhotosVC.swift in Sources */,
 				F0E5DFBC1C87121A00AD5B93 /* NewNotesVC.swift in Sources */,
 				F0CDCBDB1C7428BA00A1F776 /* AppDelegate.swift in Sources */,
+				F0E4FFA71C92E185000DB685 /* PhotosVC.swift in Sources */,
 				F0A3A3291C809C91006E2AC9 /* Model.xcdatamodeld in Sources */,
 				F05AC0691C85D08000BF17AD /* UpdateInternetAccountVC.swift in Sources */,
 				F0E5DFC01C8722FF00AD5B93 /* NotesCell.swift in Sources */,

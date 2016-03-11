@@ -20,7 +20,7 @@ class EntryInternetAccountVC: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+   
         
     }
     @IBAction func btnBack(sender: AnyObject) {

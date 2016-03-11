@@ -10,8 +10,12 @@
         <attribute name="bodyText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="createdDate" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
+    <entity name="Photos" representedClassName=".Photos" syncable="YES">
+        <attribute name="photo" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
     <elements>
         <element name="InternetAccount" positionX="-63" positionY="-18" width="128" height="105"/>
         <element name="Notes" positionX="-63" positionY="9" width="128" height="75"/>
+        <element name="Photos" positionX="-63" positionY="9" width="128" height="58"/>
     </elements>
 </model>
