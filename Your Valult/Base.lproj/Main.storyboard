@@ -991,6 +991,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="btnPickImagge:" destination="Zxe-3X-juf" eventType="touchUpInside" id="1GP-Z8-Aj4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.066666666669999999" green="0.63529411759999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -1004,7 +1007,7 @@
                                     <constraint firstAttribute="bottom" secondItem="1O9-0B-erK" secondAttribute="bottom" constant="8" id="ujA-Xw-KdG"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vLa-Zq-qa3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Photo Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vLa-Zq-qa3">
                                 <rect key="frame" x="20" y="75" width="560" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="CNG-gm-ldO"/>
@@ -1012,12 +1015,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOn-Om-DZC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOn-Om-DZC">
                                 <rect key="frame" x="200" y="486" width="200" height="45"/>
                                 <color key="backgroundColor" red="1" green="0.53995047259372297" blue="0.4467616815844494" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="ajF-l8-DtT"/>
-                                    <constraint firstAttribute="height" constant="45" id="o3x-yG-Xhg"/>
+                                    <constraint firstAttribute="height" constant="45" id="AnZ-SX-ieM"/>
+                                    <constraint firstAttribute="width" constant="200" id="JiM-WD-WSC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Save">
@@ -1035,17 +1038,24 @@
                         <constraints>
                             <constraint firstItem="vLa-Zq-qa3" firstAttribute="trailing" secondItem="363-B2-k0V" secondAttribute="trailingMargin" id="6Fl-ez-cdi"/>
                             <constraint firstItem="dcn-MB-SJk" firstAttribute="leading" secondItem="363-B2-k0V" secondAttribute="leading" id="Hp2-wB-wE5"/>
+                            <constraint firstItem="HOn-Om-DZC" firstAttribute="centerX" secondItem="363-B2-k0V" secondAttribute="centerX" id="M43-y9-QhQ"/>
+                            <constraint firstItem="HOn-Om-DZC" firstAttribute="top" secondItem="4rt-O7-kft" secondAttribute="bottom" constant="8" id="Pgf-by-maH"/>
                             <constraint firstItem="4rt-O7-kft" firstAttribute="top" secondItem="vLa-Zq-qa3" secondAttribute="bottom" constant="8" id="Re7-Zv-90x"/>
                             <constraint firstAttribute="trailing" secondItem="dcn-MB-SJk" secondAttribute="trailing" id="XUr-jT-xKj"/>
                             <constraint firstItem="vLa-Zq-qa3" firstAttribute="leading" secondItem="363-B2-k0V" secondAttribute="leadingMargin" id="Zn9-AA-ioI"/>
                             <constraint firstItem="4rt-O7-kft" firstAttribute="leading" secondItem="363-B2-k0V" secondAttribute="leadingMargin" id="gXT-md-POG"/>
                             <constraint firstItem="4rt-O7-kft" firstAttribute="trailing" secondItem="363-B2-k0V" secondAttribute="trailingMargin" id="jBF-pb-eBq"/>
-                            <constraint firstItem="HOn-Om-DZC" firstAttribute="centerX" secondItem="363-B2-k0V" secondAttribute="centerX" id="qKo-1q-b5G"/>
                             <constraint firstItem="vLa-Zq-qa3" firstAttribute="top" secondItem="dcn-MB-SJk" secondAttribute="bottom" constant="15" id="qxN-IH-vpy"/>
                             <constraint firstItem="dcn-MB-SJk" firstAttribute="top" secondItem="363-B2-k0V" secondAttribute="top" id="ra2-yh-aZp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Photos" image="bar_photo" id="tR8-kg-wB3"/>
+                    <connections>
+                        <outlet property="btnPick" destination="HOn-Om-DZC" id="xVR-Zw-C3Q"/>
+                        <outlet property="btnSave" destination="HOn-Om-DZC" id="56Y-4G-3fo"/>
+                        <outlet property="imageView" destination="4rt-O7-kft" id="3zj-mc-X6q"/>
+                        <outlet property="txtPhotoTitle" destination="vLa-Zq-qa3" id="5EM-jk-oQY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUU-NE-xQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
