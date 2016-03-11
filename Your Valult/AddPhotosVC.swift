@@ -7,14 +7,13 @@
 //
 
 import UIKit
+import CoreData
 
 class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIPopoverControllerDelegate  {
     
     
-    @IBOutlet var btnPick: UIButton!
     @IBOutlet var txtPhotoTitle: UITextField!
     @IBOutlet var imageView: UIImageView!
-    @IBOutlet var btnSave: UIButton!
     
     var picker:UIImagePickerController?=UIImagePickerController()
     var popover:UIPopoverController?=nil
@@ -22,10 +21,6 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
 
     
     
-    let managedObjectContext =
-    (UIApplication.sharedApplication().delegate
-        as! AppDelegate).managedObjectContext
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +38,7 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
     
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
     
     @IBAction func btnPickImagge(sender: AnyObject) {
         let alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
@@ -113,6 +109,59 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
                    }
     }
 
+    
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        picker .dismissViewControllerAnimated(true, completion: nil)
+        imageView.image=info[UIImagePickerControllerOriginalImage] as? UIImage
+        imageData = NSData(data: UIImageJPEGRepresentation(imageView.image!, 1.0)!)
+        
+    }
+
+    
+    
+    
+   
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    @IBAction func btnSave(sender: AnyObject) {
+        
+        
+        let managedObjectContext =
+        (UIApplication.sharedApplication().delegate
+            as! AppDelegate).managedObjectContext
+
+        
+        let entityDescription = NSEntityDescription.entityForName("Photos",
+            inManagedObjectContext: managedObjectContext)
+        
+        let photo = Photos(entity: entityDescription!,
+            insertIntoManagedObjectContext: managedObjectContext)
+        
+        // add our data
+        photo.setValue(txtPhotoTitle.text, forKey: "picname")
+        photo.setValue(imageData, forKey: "photo")
+        
+        // save it
+        do {
+            // this was the problem ///////////////
+            try managedObjectContext.save()
+            print("Photo Saved")
+            
+        } catch {
+            print("photo Not Saved")
+        }
+        
+        // Dismiss the viewcontroller
+        self.dismissViewControllerAnimated(true, completion: {});
+
+        
+    }
     
     
     

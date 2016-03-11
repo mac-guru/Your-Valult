@@ -26,6 +26,8 @@
 		F0E4FFA71C92E185000DB685 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4FFA61C92E185000DB685 /* PhotosVC.swift */; };
 		F0E4FFA91C92E3CC000DB685 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4FFA81C92E3CC000DB685 /* PhotosCell.swift */; };
 		F0E4FFAB1C92ECD3000DB685 /* AddPhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4FFAA1C92ECD3000DB685 /* AddPhotosVC.swift */; };
+		F0E4FFAE1C92FB74000DB685 /* Photos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4FFAC1C92FB74000DB685 /* Photos+CoreDataProperties.swift */; };
+		F0E4FFAF1C92FB74000DB685 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4FFAD1C92FB74000DB685 /* Photos.swift */; };
 		F0E5DFBA1C870F8900AD5B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */; };
 		F0E5DFBC1C87121A00AD5B93 /* NewNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5DFBB1C87121A00AD5B93 /* NewNotesVC.swift */; };
 		F0E5DFBE1C87225600AD5B93 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5DFBD1C87225600AD5B93 /* NotesVC.swift */; };
@@ -78,6 +80,8 @@
 		F0E4FFA61C92E185000DB685 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
 		F0E4FFA81C92E3CC000DB685 /* PhotosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 		F0E4FFAA1C92ECD3000DB685 /* AddPhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotosVC.swift; sourceTree = "<group>"; };
+		F0E4FFAC1C92FB74000DB685 /* Photos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F0E4FFAD1C92FB74000DB685 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0E5DFBB1C87121A00AD5B93 /* NewNotesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNotesVC.swift; sourceTree = "<group>"; };
 		F0E5DFBD1C87225600AD5B93 /* NotesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 		F0CDCBCE1C7428BA00A1F776 = {
 			isa = PBXGroup;
 			children = (
+				F0E4FFAC1C92FB74000DB685 /* Photos+CoreDataProperties.swift */,
+				F0E4FFAD1C92FB74000DB685 /* Photos.swift */,
 				F05DDFAA1C8B163000A5646A /* Social.framework */,
 				F0A3A3221C808ACC006E2AC9 /* CoreData.framework */,
 				F0CDCBD91C7428BA00A1F776 /* Your Valult */,
@@ -346,6 +352,8 @@
 				F0F48D891C7F44B5002069A3 /* EntryInternetAccountVC.swift in Sources */,
 				F0F48D8B1C7F581D002069A3 /* InternetAccountCell.swift in Sources */,
 				F0C5F08D1C89DE6800A62F00 /* updateNotesVC.swift in Sources */,
+				F0E4FFAF1C92FB74000DB685 /* Photos.swift in Sources */,
+				F0E4FFAE1C92FB74000DB685 /* Photos+CoreDataProperties.swift in Sources */,
 				F0228BE51C8AD279002F156F /* InternetAccount.swift in Sources */,
 				F0E4FFA91C92E3CC000DB685 /* PhotosCell.swift in Sources */,
 				F0228BE41C8AD279002F156F /* InternetAccount+CoreDataProperties.swift in Sources */,
