@@ -12,4 +12,7 @@ class PhotosCell: UITableViewCell {
 
     @IBOutlet var label: UILabel!
     
+    @IBOutlet var imageChoosed: UIImageView!
+    
+    
 }

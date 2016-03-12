@@ -13,19 +13,29 @@ class PhotosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var tableView: UITableView!
     
-    var pic = ["a","b","c","d","e","f","g","h","i","j","k","l"]
+    var photodata: Array <AnyObject> = []
+
     
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let Context: NSManagedObjectContext = AppDel.managedObjectContext
+        let request = NSFetchRequest(entityName: "Photos")
+        
+        photodata = try! Context.executeFetchRequest(request)
+        tableView.reloadData()
+        
     }
-   
+    
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -33,21 +43,26 @@ class PhotosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pic.count
+        return photodata.count
+        
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         
-        
-        
         let cell:PhotosCell = tableView.dequeueReusableCellWithIdentifier("cell") as! PhotosCell
-        cell.label.text = pic[indexPath.row]
+       
+        let data: NSManagedObject = photodata[indexPath.row] as! NSManagedObject
+        cell.label?.text = data.valueForKey("picname") as? String
         
+        cell.imageChoosed?.image = data.valueForKey("photo") as? UIImage
+               
+       // cell.imageChoosed?.image = data.valueForKey("photo") as? .. ///// yo part chai ho
+        
+
+            
         return cell
-        
-    
 
     
     }

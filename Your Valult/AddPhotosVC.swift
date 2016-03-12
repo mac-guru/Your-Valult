@@ -17,7 +17,7 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
     
     var picker:UIImagePickerController?=UIImagePickerController()
     var popover:UIPopoverController?=nil
-    var imageData: NSData?
+    var imageData: AnyObject?// NSdata
 
     
     
