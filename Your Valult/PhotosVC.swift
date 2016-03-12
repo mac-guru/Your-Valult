@@ -56,11 +56,10 @@ class PhotosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let data: NSManagedObject = photodata[indexPath.row] as! NSManagedObject
         cell.label?.text = data.valueForKey("picname") as? String
         
-        cell.imageChoosed?.image = data.valueForKey("photo") as? UIImage
-               
-       // cell.imageChoosed?.image = data.valueForKey("photo") as? .. ///// yo part chai ho
-        
-
+                
+        cell.imageChoosed?.image =  UIImage(data:data.valueForKey("photo") as! NSData,scale:1.0)
+       
+        print(data.valueForKey("photo") )
             
         return cell
 
