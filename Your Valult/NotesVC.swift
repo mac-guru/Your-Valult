@@ -138,10 +138,6 @@ class NotesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
 
-  
-    
-
-    
 
   
 }
