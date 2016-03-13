@@ -65,4 +65,34 @@ class PhotosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
     }
+    
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let Context: NSManagedObjectContext = AppDel.managedObjectContext
+        
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            Context.deleteObject(photodata[indexPath.row] as! NSManagedObject )
+            photodata.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+        
+        
+        do{
+            
+            try Context.save()
+            print("Deleted")
+            
+        }
+            
+        catch _ {
+            
+        }
+        
+        
+        
+    }
+    
+    
+    
 }

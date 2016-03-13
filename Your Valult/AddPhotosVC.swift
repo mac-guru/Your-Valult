@@ -106,7 +106,8 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
         else
         {
             popover=UIPopoverController(contentViewController: picker!)
-                   }
+        
+        }
     }
 
     
@@ -149,14 +150,13 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
         
         // save it
         do {
-            // this was the problem ///////////////
+            
             try managedObjectContext.save()
             print("Photo Saved")
             
         } catch {
             print("photo Not Saved")
         }
-        
         // Dismiss the viewcontroller
         self.dismissViewControllerAnimated(true, completion: {});
 

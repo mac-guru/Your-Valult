@@ -118,6 +118,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F06C25F51C94623E002DA3CD /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				F0E4FFAA1C92ECD3000DB685 /* AddPhotosVC.swift */,
+				F0E4FFA61C92E185000DB685 /* PhotosVC.swift */,
+				F0E4FFA81C92E3CC000DB685 /* PhotosCell.swift */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
 		F0CDCBCE1C7428BA00A1F776 = {
 			isa = PBXGroup;
 			children = (
@@ -149,9 +159,7 @@
 				F0E5073A1C8AA93400864C7B /* Notes */,
 				F0CDCBDC1C7428BA00A1F776 /* ViewController.swift */,
 				F0CDCBDE1C7428BA00A1F776 /* Main.storyboard */,
-				F0E4FFAA1C92ECD3000DB685 /* AddPhotosVC.swift */,
-				F0E4FFA61C92E185000DB685 /* PhotosVC.swift */,
-				F0E4FFA81C92E3CC000DB685 /* PhotosCell.swift */,
+				F06C25F51C94623E002DA3CD /* Photos */,
 				F0CDCBDA1C7428BA00A1F776 /* AppDelegate.swift */,
 				F0E5DFB91C870F8900AD5B93 /* Assets.xcassets */,
 				F0CDCBE31C7428BA00A1F776 /* LaunchScreen.storyboard */,
