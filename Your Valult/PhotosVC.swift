@@ -18,8 +18,8 @@ class PhotosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
         override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+            
     }
     
     
@@ -79,7 +79,6 @@ class PhotosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         }
         
-        
         do{
             
             try Context.save()
@@ -95,6 +94,7 @@ class PhotosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
     }
     
+   
     
     
 }
