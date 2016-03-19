@@ -17,6 +17,7 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
     
     var picker:UIImagePickerController?=UIImagePickerController()
     var popover:UIPopoverController?=nil
+   
     var imageData: AnyObject?// NSdata
 
     
@@ -132,6 +133,17 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
     
     @IBAction func btnSave(sender: AnyObject) {
         
+        if (txtPhotoTitle.text == ""){
+            UIAlertView(title: "Cannot Save", message: "Enter Title of Photo", delegate: nil, cancelButtonTitle: "OK").show()
+            txtPhotoTitle.becomeFirstResponder()
+        }
+        else if imageData == nil {
+            UIAlertView(title: "Cannot Save", message: "Select Image", delegate: nil, cancelButtonTitle: "OK").show()
+            
+        }
+        
+        
+        else{
         
         let managedObjectContext =
         (UIApplication.sharedApplication().delegate
@@ -159,11 +171,9 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
         }
         // Dismiss the viewcontroller
         self.dismissViewControllerAnimated(true, completion: {});
-
+        }
         
     }
-    
-    
     
  
 }
