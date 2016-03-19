@@ -60,6 +60,7 @@ class EntryInternetAccountVC: UIViewController {
             
           
             UIAlertView(title: "Cannot Submit", message: "Account Name is Missing", delegate: nil, cancelButtonTitle: "OK").show()
+            txtAccountName.becomeFirstResponder()
             
             
             
@@ -74,12 +75,14 @@ class EntryInternetAccountVC: UIViewController {
             
             
             UIAlertView(title: "Cannot Submit", message: "User Name is Missing", delegate: nil, cancelButtonTitle: "OK").show()
+            txtUserName.becomeFirstResponder()
             
             
         }
         
         else if (txtPassword.text == ""){
                UIAlertView(title: "Cannot Submit", message: "Password is Missing", delegate: nil, cancelButtonTitle: "OK").show()
+            txtPassword.becomeFirstResponder()
        
         }
        

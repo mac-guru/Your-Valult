@@ -77,6 +77,21 @@ class UpdateInternetAccountVC: UIViewController {
     
     @IBAction func btnUpdate(sender: AnyObject) {
        
+        if(txtAccountName.text == ""){
+            UIAlertView(title: "Cannot Update", message: "Account Name is Missing", delegate: nil, cancelButtonTitle: "OK" ).show()
+            txtAccountName.becomeFirstResponder()
+        }
+        
+        else if (txtUserName.text == ""){
+            UIAlertView(title: "Cannot Update", message: "User Name is Missing", delegate: nil, cancelButtonTitle: "OK").show()
+            txtUserName.becomeFirstResponder()
+        }
+        else if(txtPassword.text == ""){
+            UIAlertView(title: "Cannot Update", message: "Password is Missing", delegate: nil, cancelButtonTitle: "OK").show()
+            txtPassword.becomeFirstResponder()
+        }
+        
+        else {
         
         let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let Context: NSManagedObjectContext = AppDel.managedObjectContext
@@ -105,6 +120,7 @@ class UpdateInternetAccountVC: UIViewController {
         }
         
         
+        }
         
     }
     
