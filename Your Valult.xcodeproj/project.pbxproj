@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F0228BE41C8AD279002F156F /* InternetAccount+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0228BE21C8AD279002F156F /* InternetAccount+CoreDataProperties.swift */; };
 		F0228BE51C8AD279002F156F /* InternetAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0228BE31C8AD279002F156F /* InternetAccount.swift */; };
+		F03661AB1C9D8DA500C0C153 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03661AA1C9D8DA500C0C153 /* SCLAlertView.swift */; };
 		F05AC0691C85D08000BF17AD /* UpdateInternetAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05AC0681C85D08000BF17AD /* UpdateInternetAccountVC.swift */; };
 		F05DDFAB1C8B163000A5646A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05DDFAA1C8B163000A5646A /* Social.framework */; };
 		F0860FDF1C8AA72600B358A2 /* DateTimeFormattedAsTimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0860FDE1C8AA72600B358A2 /* DateTimeFormattedAsTimeAgo.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		F0228BE21C8AD279002F156F /* InternetAccount+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "InternetAccount+CoreDataProperties.swift"; path = "../InternetAccount+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F0228BE31C8AD279002F156F /* InternetAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternetAccount.swift; path = ../InternetAccount.swift; sourceTree = "<group>"; };
+		F03661AA1C9D8DA500C0C153 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = "../../../../../Downloads/Yes_rights-master/Yes Rights/SCLAlertView.swift"; sourceTree = "<group>"; };
 		F05AC0681C85D08000BF17AD /* UpdateInternetAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateInternetAccountVC.swift; sourceTree = "<group>"; };
 		F05DDFAA1C8B163000A5646A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F0860FDE1C8AA72600B358A2 /* DateTimeFormattedAsTimeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeFormattedAsTimeAgo.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		F0E507391C8AA90B00864C7B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F03661AA1C9D8DA500C0C153 /* SCLAlertView.swift */,
 				F0860FDE1C8AA72600B358A2 /* DateTimeFormattedAsTimeAgo.swift */,
 			);
 			name = "Supporting Files";
@@ -374,6 +377,7 @@
 				F0A3A3291C809C91006E2AC9 /* Model.xcdatamodeld in Sources */,
 				F05AC0691C85D08000BF17AD /* UpdateInternetAccountVC.swift in Sources */,
 				F0E5DFC01C8722FF00AD5B93 /* NotesCell.swift in Sources */,
+				F03661AB1C9D8DA500C0C153 /* SCLAlertView.swift in Sources */,
 				F0C5F08A1C89D80A00A62F00 /* Notes+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

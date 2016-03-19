@@ -53,6 +53,40 @@ class EntryInternetAccountVC: UIViewController {
     
     @IBAction func SaveInternetAccount(sender: AnyObject) {
         
+        if(txtAccountName.text == ""){
+        
+           
+            
+            
+          
+            UIAlertView(title: "Cannot Submit", message: "Account Name is Missing", delegate: nil, cancelButtonTitle: "OK").show()
+            
+            
+            
+        
+          //  let alertViewController = SCLAlertView().showError("Ooops!", subTitle: "hi")
+            
+        
+        }
+            
+        else if (txtUserName.text == ""){
+            
+            
+            
+            UIAlertView(title: "Cannot Submit", message: "User Name is Missing", delegate: nil, cancelButtonTitle: "OK").show()
+            
+            
+        }
+        
+        else if (txtPassword.text == ""){
+               UIAlertView(title: "Cannot Submit", message: "Password is Missing", delegate: nil, cancelButtonTitle: "OK").show()
+       
+        }
+       
+        
+        else {
+        
+        
         let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let Context: NSManagedObjectContext = AppDel.managedObjectContext
         let entity = NSEntityDescription.entityForName("InternetAccount", inManagedObjectContext: Context)
@@ -84,6 +118,7 @@ class EntryInternetAccountVC: UIViewController {
         txtUserName.resignFirstResponder()
         txtPassword.resignFirstResponder()
 
+        }
         
         
     }
