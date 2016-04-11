@@ -18,6 +18,7 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
     var picker:UIImagePickerController?=UIImagePickerController()
     var popover:UIPopoverController?=nil
    
+    
     var imageData: AnyObject?// NSdata
 
     
@@ -42,6 +43,7 @@ class AddPhotosVC: UIViewController,UIAlertViewDelegate,UIImagePickerControllerD
     
     
     @IBAction func btnPickImagge(sender: AnyObject) {
+        
         let alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
         
         let cameraAction = UIAlertAction(title: "Camera", style: UIAlertActionStyle.Default)

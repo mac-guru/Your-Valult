@@ -89,6 +89,24 @@ class EntryInternetAccountVC: UIViewController {
         
         else {
         
+            saveInternetAccounts()
+        
+            
+        txtAccountName.resignFirstResponder()
+        txtUserName.resignFirstResponder()
+        txtPassword.resignFirstResponder()
+
+        }
+        
+        
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+         self.view.endEditing(true)
+    }
+
+    
+    func saveInternetAccounts(){
         
         let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let Context: NSManagedObjectContext = AppDel.managedObjectContext
@@ -96,7 +114,7 @@ class EntryInternetAccountVC: UIViewController {
         
         let item = InternetAccount(entity: entity!, insertIntoManagedObjectContext: Context)
         
-     
+        
         item.internetAccount = txtAccountName.text!
         item.internetUserName = txtUserName.text!
         item.internetPassword = txtPassword.text!
@@ -116,20 +134,8 @@ class EntryInternetAccountVC: UIViewController {
             
             
         }
-        
-        txtAccountName.resignFirstResponder()
-        txtUserName.resignFirstResponder()
-        txtPassword.resignFirstResponder()
 
-        }
-        
-        
     }
-    
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-         self.view.endEditing(true)
-    }
-
    
 
 }

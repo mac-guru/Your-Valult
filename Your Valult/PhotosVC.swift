@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import LocalAuthentication
 
 class PhotosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -18,11 +19,14 @@ class PhotosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
         override func viewDidLoad() {
         super.viewDidLoad()
-        
+            
+                        
             
     }
     
     
+    
+        
     
     override func viewDidAppear(animated: Bool) {
         
@@ -33,6 +37,8 @@ class PhotosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         photodata = try! Context.executeFetchRequest(request)
         tableView.reloadData()
+        
+       
         
     }
     

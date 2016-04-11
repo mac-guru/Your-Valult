@@ -16,8 +16,6 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
      var IA: Array <AnyObject> = []
     
    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -104,6 +102,7 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
     
     //Delete IA
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
         let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let Context: NSManagedObjectContext = AppDel.managedObjectContext
 
@@ -120,13 +119,15 @@ class InternetAccountVC:  UIViewController, UITableViewDelegate, UITableViewData
             print("Deleted")
             
         }
-        catch _ {
+        catch {
             
         }
         
         
         
     }
+    
+    
     
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
