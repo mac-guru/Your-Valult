@@ -338,15 +338,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-Yd-CGS">
-                                <rect key="frame" x="32" y="351" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-Yd-CGS">
+                                <rect key="frame" x="192" y="457" width="216" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="EYc-Fx-qtI"/>
+                                    <constraint firstAttribute="height" constant="74" id="yda-Pi-bdT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Unlock">
+                                    <color key="titleColor" red="0.15971033472342566" green="0.87859864301845569" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="unlock:" destination="d5B-UY-UcS" eventType="touchUpInside" id="VFR-Gu-65Q"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touchID" translatesAutoresizingMaskIntoConstraints="NO" id="7ia-gI-ruw">
+                                <rect key="frame" x="154" y="136" width="291" height="327"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="327" id="0rM-T0-KEo"/>
+                                    <constraint firstAttribute="width" constant="291" id="baD-6H-l3F"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key Is Your FingerPrint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYF-WR-l9I">
+                                <rect key="frame" x="192" y="62" width="216" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="ETS-bS-YTk"/>
+                                    <constraint firstAttribute="height" constant="77" id="gVO-nm-io6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="0.94170109024822635" blue="0.80509295587241658" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ugU-Yd-CGS" firstAttribute="centerX" secondItem="deq-mB-BZw" secondAttribute="centerX" id="7ho-7b-naa"/>
+                            <constraint firstItem="7ia-gI-ruw" firstAttribute="centerY" secondItem="deq-mB-BZw" secondAttribute="centerY" id="ANg-Dk-Nmg"/>
+                            <constraint firstItem="7ia-gI-ruw" firstAttribute="centerX" secondItem="deq-mB-BZw" secondAttribute="centerX" id="Agr-cX-Un6"/>
+                            <constraint firstItem="uYF-WR-l9I" firstAttribute="centerX" secondItem="deq-mB-BZw" secondAttribute="centerX" id="EbX-ip-Czb"/>
+                            <constraint firstItem="uYF-WR-l9I" firstAttribute="top" secondItem="KZq-mS-vpE" secondAttribute="bottom" constant="42" id="dYp-4f-HNj"/>
+                            <constraint firstItem="Kyn-Tp-nKD" firstAttribute="top" secondItem="ugU-Yd-CGS" secondAttribute="bottom" constant="69" id="uvH-sz-xBk"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="89V-6I-N7h" kind="show" identifier="sucess" id="Mxj-Rv-pAJ"/>
@@ -354,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCK-xs-iZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2905" y="-994"/>
+            <point key="canvasLocation" x="-2949" y="-1004"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ooR-pJ-4Jv">
@@ -1141,5 +1174,6 @@
         <image name="bar_notes" width="29" height="29"/>
         <image name="bar_photo" width="29" height="29"/>
         <image name="share" width="237" height="162"/>
+        <image name="touchID" width="300" height="300"/>
     </resources>
 </document>
