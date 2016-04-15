@@ -335,50 +335,62 @@
                         <viewControllerLayoutGuide type="bottom" id="Kyn-Tp-nKD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="deq-mB-BZw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-Yd-CGS">
-                                <rect key="frame" x="192" y="457" width="216" height="74"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-Yd-CGS">
+                                <rect key="frame" x="103" y="450" width="114" height="58"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="EYc-Fx-qtI"/>
-                                    <constraint firstAttribute="height" constant="74" id="yda-Pi-bdT"/>
+                                    <constraint firstAttribute="height" constant="58" id="1mD-Zq-mJM"/>
+                                    <constraint firstAttribute="width" constant="114" id="LaB-hH-pGu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Unlock">
+                                <state key="normal" title="Unlock" image="lock-unlocked-512">
                                     <color key="titleColor" red="0.15971033472342566" green="0.87859864301845569" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="unlock:" destination="d5B-UY-UcS" eventType="touchUpInside" id="VFR-Gu-65Q"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touchID" translatesAutoresizingMaskIntoConstraints="NO" id="7ia-gI-ruw">
-                                <rect key="frame" x="154" y="136" width="291" height="327"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="327" id="0rM-T0-KEo"/>
-                                    <constraint firstAttribute="width" constant="291" id="baD-6H-l3F"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key Is Your FingerPrint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYF-WR-l9I">
-                                <rect key="frame" x="192" y="62" width="216" height="77"/>
+                                <rect key="frame" x="52" y="62" width="216" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="ETS-bS-YTk"/>
                                     <constraint firstAttribute="height" constant="77" id="gVO-nm-io6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="1" green="0.94170109024822635" blue="0.80509295587241658" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aT-P3-fsc">
+                                <rect key="frame" x="119" y="507" width="81" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="YFo-6c-1tM"/>
+                                    <constraint firstAttribute="width" constant="81" id="ZBI-5k-dKA"/>
+                                </constraints>
+                                <state key="normal" title="Help" image="Help-Icon"/>
+                                <connections>
+                                    <segue destination="WqU-ic-Zz0" kind="show" id="9OQ-QD-LPe"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touchID" translatesAutoresizingMaskIntoConstraints="NO" id="7ia-gI-ruw">
+                                <rect key="frame" x="14" y="120" width="291" height="327"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="327" id="0rM-T0-KEo"/>
+                                    <constraint firstAttribute="width" constant="291" id="baD-6H-l3F"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ugU-Yd-CGS" firstAttribute="centerX" secondItem="deq-mB-BZw" secondAttribute="centerX" id="7ho-7b-naa"/>
                             <constraint firstItem="7ia-gI-ruw" firstAttribute="centerY" secondItem="deq-mB-BZw" secondAttribute="centerY" id="ANg-Dk-Nmg"/>
                             <constraint firstItem="7ia-gI-ruw" firstAttribute="centerX" secondItem="deq-mB-BZw" secondAttribute="centerX" id="Agr-cX-Un6"/>
+                            <constraint firstItem="Kyn-Tp-nKD" firstAttribute="top" secondItem="5aT-P3-fsc" secondAttribute="bottom" constant="8" id="DTg-W3-Psb"/>
                             <constraint firstItem="uYF-WR-l9I" firstAttribute="centerX" secondItem="deq-mB-BZw" secondAttribute="centerX" id="EbX-ip-Czb"/>
+                            <constraint firstItem="5aT-P3-fsc" firstAttribute="centerX" secondItem="deq-mB-BZw" secondAttribute="centerX" id="Wmo-Gz-OhJ"/>
+                            <constraint firstItem="ugU-Yd-CGS" firstAttribute="top" secondItem="7ia-gI-ruw" secondAttribute="bottom" constant="3" id="X7W-8W-eI7"/>
                             <constraint firstItem="uYF-WR-l9I" firstAttribute="top" secondItem="KZq-mS-vpE" secondAttribute="bottom" constant="42" id="dYp-4f-HNj"/>
-                            <constraint firstItem="Kyn-Tp-nKD" firstAttribute="top" secondItem="ugU-Yd-CGS" secondAttribute="bottom" constant="69" id="uvH-sz-xBk"/>
+                            <constraint firstItem="ugU-Yd-CGS" firstAttribute="centerX" secondItem="deq-mB-BZw" secondAttribute="centerX" id="p65-jL-bs0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -388,6 +400,98 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCK-xs-iZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2949" y="-1004"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="72L-uF-7hY">
+            <objects>
+                <viewController id="WqU-ic-Zz0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TDm-aI-LJg"/>
+                        <viewControllerLayoutGuide type="bottom" id="nz5-oh-FFW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Q4-U7-I4r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-d8-YYu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NEED HELP ??" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGk-Bs-jFq">
+                                        <rect key="frame" x="118" y="28" width="137.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abT-cz-XKa">
+                                        <rect key="frame" x="8" y="25" width="39" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="btnBack:" destination="RSb-Th-FQ0" eventType="touchUpInside" id="P2c-q0-vk6"/>
+                                            <segue destination="d5B-UY-UcS" kind="show" id="lW0-AN-fcW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.63529411759999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How Do I Unlock Vault?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWN-cU-1T0">
+                                <rect key="frame" x="5" y="66" width="365" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.85192953020134232" green="0.079066300931563735" blue="0.27029246794871797" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-&gt; Use Same Fingerprint that you have used to unlock your phone." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLC-Ck-3s3">
+                                <rect key="frame" x="1" y="96" width="334" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.11414882485638643" green="0.73698608402639598" blue="0.85192953020134232" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How Do I Save Internet Acconts?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61j-Dn-W1R">
+                                <rect key="frame" x="5" y="142" width="365" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.85192953019999995" green="0.07906630093" blue="0.2702924679" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-&gt; After unlocking vault go to Internet Accounts section and press + button and fill details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TT6-Il-QMk">
+                                <rect key="frame" x="1" y="172" width="310" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.1141488249" green="0.73698608399999999" blue="0.85192953019999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How Do I Save Photos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nP-dz-dcf">
+                                <rect key="frame" x="5" y="245" width="306" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.85192953019999995" green="0.07906630093" blue="0.2702924679" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTi-Gx-FJE">
+                                <rect key="frame" x="2" y="274" width="308" height="144"/>
+                                <string key="text">-&gt; First Unlock vault and go to photos section and press + button. Now if you want to click photo press on camera , if you want ot import from gallary click on library and select photo.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.1141488249" green="0.73698608399999999" blue="0.85192953019999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is my data safe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thU-vU-2IG">
+                                <rect key="frame" x="2" y="416" width="298" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.85192953019999995" green="0.07906630093" blue="0.2702924679" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l8-wI-gjd">
+                                <rect key="frame" x="2" y="444" width="308" height="116"/>
+                                <string key="text">-&gt;Since your finger print is key to this app and data are not uploaded to internet for back up,  your data is safe and no one can access unless you let them to.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.1141488249" green="0.73698608399999999" blue="0.85192953019999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuG-7I-NFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3679" y="-900"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ooR-pJ-4Jv">
@@ -407,32 +511,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbt-Kl-fG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2114" y="-983"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="r9e-jn-Iau">
-            <objects>
-                <viewController storyboardIdentifier="locked" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ULn-uV-FNj" customClass="ViewController" customModule="Your_Valult" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SM4-4M-RSG"/>
-                        <viewControllerLayoutGuide type="bottom" id="nvq-4q-bDT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IYT-8y-DpS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Locked!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOF-ZY-5g2">
-                                <rect key="frame" x="20" y="168" width="89" height="56"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dKY-nd-cVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-588" y="-924"/>
         </scene>
         <!--Internet Accounts-->
         <scene sceneID="oJ0-M4-waY">
@@ -572,7 +650,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-3164" y="32"/>
+            <point key="canvasLocation" x="-3035" y="95"/>
         </scene>
         <!--Entry Internet AccountVC-->
         <scene sceneID="WE3-WN-Ili">
@@ -1169,10 +1247,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Help-Icon" width="256" height="256"/>
         <image name="add" width="128" height="128"/>
         <image name="bar_IA" width="29" height="29"/>
         <image name="bar_notes" width="29" height="29"/>
         <image name="bar_photo" width="29" height="29"/>
+        <image name="lock-unlocked-512" width="512" height="512"/>
         <image name="share" width="237" height="162"/>
         <image name="touchID" width="300" height="300"/>
     </resources>

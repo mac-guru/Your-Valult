@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        authenticateUser()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     
     func authenticateUser(){
-        var touchContext: LAContext = LAContext()
+        let touchContext: LAContext = LAContext()
         
         
         //try touchContext.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics)
@@ -36,12 +36,13 @@ class ViewController: UIViewController {
                     self.gotoHome()
                     
                 })
+                
             } else {
                 dispatch_async(dispatch_get_main_queue(), {
                     switch error!.code{
                     case LAError.UserCancel.rawValue:
                         
-                        UIAlertView(title: "Canled", message: "Cancled", delegate: nil, cancelButtonTitle: "OK").show()
+                        UIAlertView(title: "Cancled", message: "Cancled", delegate: nil, cancelButtonTitle: "OK").show()
                     
                     case  LAError.UserFallback.rawValue:
                         
